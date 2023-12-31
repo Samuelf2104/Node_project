@@ -1,0 +1,31 @@
+<form id="inscriptionForm">
+    <label for="new_username">Nom d'utilisateur :</label>
+    <input type="text" id="new_username" name="username"><br>
+    <label for="new_password">Mot de passe :</label>
+    <input type="password" id="new_password" name="password"><br>
+    <button type="submit">S'inscrire</button>
+</form>
+<script>
+    document.getElementById('inscriptionForm').onsubmit = function(e) {
+        e.preventDefault();
+
+        var username = document.getElementById('new_username').value;
+        var password = document.getElementById('new_password').value;
+
+        fetch('/inscription', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ username, password }),
+        })
+        .then(response => response.text())
+        .then(data => {
+            alert(data);
+            window.location = 'index.html'; // Redirection
+        })
+        .catch((error) => {
+            console.error('Erreur:', error);
+        });
+    };
+</script>

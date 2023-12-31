@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Votre Boutique en Ligne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo_test.png" alt="Logo de la Boutique">
+    </header>
+    <main>
+        <h1>Bienvenue sur Notre Boutique en Ligne</h1>
+        <!-- Contenu de la page -->
+    </main>
+    <!-- Bouton de menu -->
+    <button id="menuButton">Menu</button>
+
+    <!-- Liste déroulante -->
+    <div id="dropdownMenu" class="dropdown-content">
+        <a href="the/the.html">Thé</a>
+        <a href="cafe/cafe.html">Café</a>
+        <a href="panier/panier.html">Panier</a>
+        <a href="inscription.html">Inscription</a> <!-- Lien d'inscription ajouté ici -->
+    </div>
+    <!-- Formulaire de connexion -->
+    <form id="loginForm">
+        <label for="login_username">Nom d'utilisateur :</label>
+        <input type="text" id="login_username" name="username"><br>
+        <label for="login_password">Mot de passe :</label>
+        <input type="password" id="login_password" name="password"><br>
+        <button type="submit" id="boutonConnexion">Se connecter</button>
+    </form>
+    <div id="conteneurDeconnexion">
+    <button id="boutonDeconnexion" style="display: block;">Déconnexion</button>
+    </div>
+    <!-- Message connexion -->    
+    <div id="messageConnexion"></div>
+    <footer>
+        <p>© 2023 Ultimate cafe&tea</p>
+    </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('/etatConnexion')
+            .then(response => response.json())
+            .then(data => {
+                const message = document.getElementById('messageConnexion');
+                if (data.username && data.username !== 0) {
+                    message.textContent = 'Bonjour ' + data.username;
+                } else {
+                    message.textContent = 'Vous n\'êtes pas connecté';
+                }
+            })
+            .catch(error => {
+                console.error('Erreur:', error);
+            });
+    });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

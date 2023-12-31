@@ -1,0 +1,96 @@
+
+/* Base Typography */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Article Styling */
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.article img {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Cart Styling */
+#panier {
+    border-top: 3px solid #4CAF50;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
+/* Button Styling */
+button, .supprimerDuPanier {
+    margin-left: 10px;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover, .supprimerDuPanier:hover {
+    background-color: #A0522D;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+        margin: 10px;
+    }
+
+    .article img {
+        width: 100%;
+    }
+}
+
+/* Cafe Container Styling for Two Per Line Display */
+.cafe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 48%; /* Adjusting width to fit two per line with some spacing */
+    margin-bottom: 20px;
+}
+
+/* Adjustments for Responsive Design */
+@media (max-width: 768px) {
+    .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+        width: 100%; /* Full width on smaller screens */
+    }
+}

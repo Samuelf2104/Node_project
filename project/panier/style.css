@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#contenuPanier {
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.articlePanier {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.articlePanier:last-child {
+    border-bottom: none;
+}
+
+.articlePanier h2 {
+    margin: 0;
+}
+
+.articlePanier p {
+    margin: 5px 0;
+}
+
+.supprimerDuPanier {
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.supprimerDuPanier:hover {
+    background-color: darkred;
+}

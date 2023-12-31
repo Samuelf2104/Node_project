@@ -1,0 +1,323 @@
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+
+header .logo {
+    height: auto;
+    width: 200px; /* Larger logo for better visibility */
+}
+
+nav {
+    background-color: #4CAF50;
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #a0e7a0;
+}
+
+/* Improved button styles for a more professional look */
+.button, button, input[type="submit"], input[type="button"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #367c39;
+}
+
+/* Footer styling for consistency */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* General styling for form inputs */
+input[type="text"],
+input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px;
+    border-radius: 4px;
+}
+
+/* Styling for the main content area */
+.main-content {
+    padding: 2rem;
+    background: white;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Specific styles for the menu buttons */
+/* Styles spécifiques pour les boutons du menu */
+.menu-button-cafe,
+.menu-button-the,
+.menu-button-panier,
+.menu-button-inscription {
+    background-color: #4CAF50; /* Couleur de fond plus vive */
+    color: white; /* Couleur de texte pour contraste élevé */
+    font-weight: bold; /* Texte en gras pour attirer l'attention */
+    border: 2px solid white; /* Bordure blanche pour définir les boutons */
+    border-radius: 4px; /* Bords arrondis pour un look moderne */
+    padding: 12px 18px; /* Plus de remplissage pour des boutons plus grands */
+    text-transform: uppercase; /* Texte en majuscule pour plus d'impact */
+    letter-spacing: 1px; /* Espacement des lettres pour une meilleure clarté */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée pour un effet 3D */
+    transition: all 0.3s ease; /* Transition en douceur pour les effets de survol */
+    font-size: 18px; /* Augmentation de la taille de la police pour une meilleure visibilité */
+}
+
+.menu-button-cafe:hover,
+.menu-button-the:hover,
+.menu-button-panier:hover,
+.menu-button-inscription:hover {
+    background-color: white; /* Couleur de fond inversée au survol */
+    color: #4CAF50; /* Couleur de texte inversée au survol */
+    border-color: #4CAF50; /* Bordure de la même couleur que le texte au survol */
+}
+
+
+/* General responsive behavior */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .main-content, footer {
+        width: 95%;
+    }
+}
+
+
+/* Increasing the size of the logo a bit more */
+img[src="logo_test.png"] {
+    width: 180px; /* Slightly larger width for the logo */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+/* Assuming the "vous n'êtes pas connecté" text is within a container with class .auth-status */
+/* Positioning the menu just below the .auth-status container */
+/* The menu button container will follow naturally if it's the next element in the HTML structure */
+.auth-status {
+    margin-bottom: 20px; /* Adding some space below the text for the menu button */
+}
+
+/* If the menu button needs to be moved independently, we would need to adjust its container */
+#menuButton {
+    position: relative; /* Changing to relative positioning */
+    display: block; /* Ensure it's a block-level element to position it correctly */
+    margin-top: 10px; /* Space below the "vous n'êtes pas connecté" text */
+    margin-left: auto; /* Centering the button if it's a block */
+    margin-right: auto;
+}
+
+/* Footer adjustments to ensure it stays at the bottom */
+footer {
+    margin-top: 40px; /* Ensuring there's space above the footer */
+}
+
+
+/* Enhancing the text color for better readability against the background */
+body {
+    color: #463f3a; /* A deep brown that is legible and complements the background */
+    font-family: 'Open Sans', Arial, sans-serif; /* A clean and modern font */
+    background-image: url('arrière_plan.png'); /* Re-adding the background image */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* No repeating image */
+    background-attachment: fixed; /* Fixed background on scroll */
+}
+
+/* Updating button styles for better visual integration */
+.button {
+    background-color: #9c8d84; /* A muted coffee color derived from the image */
+    color: #fff; /* White color for text to stand out */
+    border: none; /* No border for a cleaner look */
+    padding: 10px 20px; /* Comfortable padding for interaction */
+    border-radius: 5px; /* Soft rounded corners */
+    text-shadow: none; /* Clear text without shadow for better legibility */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth transition for hover state */
+}
+
+.button:hover {
+    background-color: #b3a9a0; /* A lighter shade for hover effect */
+}
+
+/* Header and footer styles for better contrast against the background */
+header, .header, footer, .footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for legibility */
+    color: #fff; /* White text for contrast */
+}
+
+/* Adjusting form input styles for better visibility */
+input[type='text'], input[type='password'], input[type='submit'] {
+    border: 1px solid #ccc; /* Subtle border for definition */
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white for form fields */
+    color: #463f3a; /* Coordinated text color for inputs */
+}
+
+/* Specific styles for menu items, assuming they have a class named .menu-button */
+.menu-button {
+    background-color: #9c8d84; /* Coordinated with button styles */
+    color: #fff; /* White text for readability */
+    border-radius: 5px; /* Consistent with button styles */
+    padding: 10px 15px; /* Consistent with button styles */
+}
+
+.menu-button:hover {
+    background-color: #b3a9a0; /* Lighter shade for hover effect, consistent with button styles */
+}
+
+
+/* Changing "vous n'êtes pas connecté" text to white */
+/* Assuming "vous n'êtes pas connecté" is either a p tag, span, or has a specific class */
+.auth-status, p, span { /* This selector should be replaced with the actual selector used for the text */
+    color: #FFFFFF; /* White color */
+}
+
+/* Changing the button styles to white */
+.button {
+    background-color: #6A885B; /* White background for buttons */
+    color: #463f3a; /* Text color changed for contrast against the white button */
+    border: 1px solid #ccc; /* Adding a subtle border for button definition */
+}
+
+.button:hover {
+    background-color: #f2f2f2; /* A light grey color for the hover state */
+}
+
+/* If the buttons have a class or ID that needs to be targeted specifically, replace .button with that selector. */
+
+
+/* Setting the "vous n'êtes pas connecté" text to white */
+/* Additional selectors like .login-status, .auth-message, etc., can be added as needed */
+.auth-message, .not-logged-in, .login-status, p, span {
+    color: #FFFFFF; /* White color for the text */
+}
+
+/* Setting the button colors to white and text to a contrasting color */
+.button, .menu-button, button, input[type='submit'], input[type='button'] {
+    background-color: #FFFFFF; /* White background for buttons */
+    color: #504945; /* Contrasting text color for buttons */
+    border: 1px solid #ddd; /* Border for button definition */
+}
+
+/* Adjusting hover state for better visibility */
+.button:hover, .menu-button:hover, button:hover, input[type='submit']:hover, input[type='button']:hover {
+    background-color: #f7f7f7; /* A light gray for the hover state */
+    color: #504945; /* Ensuring the text color remains visible */
+}
+
+/* Ensuring the footer text is also white for consistency */
+footer, .footer {
+    color: #FFFFFF; /* White color for footer text */
+}
+
+/* Explicitly changing the text for "nom d'utilisateur", "mot de passe", and "vous n'êtes pas connecté" to white */
+/* The actual selectors may vary based on the provided HTML structure */
+.username-label, .password-label, .not-connected {
+    color: #FFFFFF; /* White color for text */
+}
+
+/* Styling buttons for "thé", "café", "panier", "inscription" to be more appealing */
+/* Assuming that buttons have these specific classes */
+.button-the, .button-cafe, .button-panier, .button-inscription {
+    background-color: #FFFFFF; /* White background */
+    color: #000000; /* Black text for contrast */
+    padding: 10px 15px; /* Padding for a larger click area */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #000000; /* Black border for definition */
+    text-transform: uppercase; /* Uppercase text for style */
+    font-weight: bold; /* Bold text for emphasis */
+    margin: 5px; /* Margin around buttons to prevent them from sticking together */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Transition for hover effects */
+}
+
+.button-the:hover, .button-cafe:hover, .button-panier:hover, .button-inscription:hover {
+    background-color: #f2f2f2; /* Light grey background for hover state */
+    color: #76323F; /* Coffee-colored text on hover */
+}
+
+/* Additional changes to ensure the buttons and texts align well with the background image */
+/* May require additional selectors for precise targeting */
+
+/* Changing the text color to white for better visibility against the background */
+.username-label, .password-label, .login-status {
+    color: #FFFFFF; /* White color for better visibility against the background image */
+}
+
+/* Styling the buttons for "thé", "café", "panier", and "inscription" */
+.button-the, .button-cafe, .button-panier, .button-inscription {
+    background-color: #FFFFFF; /* White background for the buttons */
+    color: #000; /* Dark text for contrast */
+    border: 1px solid #000; /* Black border for definition */
+    padding: 10px 15px; /* Padding for size */
+    border-radius: 5px; /* Rounded corners for style */
+    text-transform: uppercase; /* Uppercase text for a modern look */
+    font-weight: bold; /* Bold text for prominence */
+    margin: 0 10px; /* Margin for spacing */
+    cursor: pointer; /* Cursor for clickability */
+    transition: background-color 0.2s, color 0.2s; /* Transition for hover effects */
+}
+
+.button-the:hover, .button-cafe:hover, .button-panier:hover, .button-inscription:hover {
+    background-color: #e6e6e6; /* Light grey background for hover effect */
+    color: #333; /* Darker text for hover contrast */
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Nos Cafés</h1>
+    <div id="listeCafes">
+        <!-- Exemple d'un article -->
+        <div class="article">
+            <img src="arabica.jpg" alt="arabica">
+            <h2>arabica</h2>
+            <p>Prix: 5€</p>
+            <button class="ajouterPanier" data-nom="arabica" data-prix="5">Ajouter au panier</button>
+        </div>
+        <div class="article">
+            <img src="bourbon.jpeg" alt="bourbon">
+            <h2>bourbon</h2>
+            <p>Prix: 8€</p>
+            <button class="ajouterPanier" data-nom="bourbon" data-prix="8">Ajouter au panier</button>
+        </div>
+        <div class="article">
+            <img src="kona.jpeg" alt="kona">
+            <h2>kona</h2>
+            <p>Prix: 6.5€</p>
+            <button class="ajouterPanier" data-nom="kona" data-prix="6.5">Ajouter au panier</button>
+        </div>
+        <div class="article">
+            <img src="geisha.jpeg" alt="geisha">
+            <h2>geisha</h2>
+            <p>Prix: 4€</p>
+            <button class="ajouterPanier" data-nom="geisha" data-prix="4">Ajouter au panier</button>
+        </div>
+        <div class="article">
+            <img src="catuai.jpeg" alt="catuai">
+            <h2>catuai</h2>
+            <p>Prix: 9.5€</p>
+            <button class="ajouterPanier" data-nom="catuai" data-prix="9.5">Ajouter au panier</button>
+        </div>
+        <div class="article">
+            <img src="acaia.jpeg" alt="acaia">
+            <h2>acaia</h2>
+            <p>Prix: 7.5€</p>
+            <button class="ajouterPanier" data-nom="acaia" data-prix="7.5">Ajouter au panier</button>
+        </div>
+        <div class="article">
+            <img src="robusta.jpg" alt="robusta">
+            <h2>robusta</h2>
+            <p>Prix: 5.5€</p>
+            <button class="ajouterPanier" data-nom="robusta" data-prix="5.5">Ajouter au panier</button>
+        </div>
+
+        <!-- Répéter pour chaque type de café -->
+    </div>
+
+    <div id="panier">
+        <h2>Votre Panier</h2>
+        <ul id="articlesPanier">
+            <!-- Les articles ajoutés apparaîtront ici -->
+        </ul>
+        <button id="validerPanier">Valider le panier</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

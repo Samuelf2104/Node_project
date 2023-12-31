@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Nos Thés</h1>
+    <div id="listeCafes">
+        <!-- Exemple d'un article -->
+        <div class="article">
+            <img src="thevert.jpeg" alt="the vert">
+            <h2>thevert</h2>
+            <p>Prix: 1€</p>
+            <button class="ajouterPanier" data-nom="the vert" data-prix="1">Ajouter au panier</button>
+        </div>
+        <div class="article">
+            <img src="theblanc.jpeg" alt="the blanc">
+            <h2>the blanc</h2>
+            <p>Prix: 2€</p>
+            <button class="ajouterPanier" data-nom="the blanc" data-prix="2">Ajouter au panier</button>
+        </div>
+        <div class="article">
+            <img src="thenoir.jpeg" alt="the noir">
+            <h2>the noir</h2>
+            <p>Prix: 2.5€</p>
+            <button class="ajouterPanier" data-nom="the noir" data-prix="2.5">Ajouter au panier</button>
+        </div>
+        <div class="article">
+            <img src="matcha.jpeg" alt="matcha">
+            <h2>matcha</h2>
+            <p>Prix: 4€</p>
+            <button class="ajouterPanier" data-nom="matcha" data-prix="4">Ajouter au panier</button>
+        </div>
+        <div class="article">
+            <img src="oolong.jpg" alt="oolong">
+            <h2>oolong</h2>
+            <p>Prix: 3€</p>
+            <button class="ajouterPanier" data-nom="oolong" data-prix="3">Ajouter au panier</button>
+        </div>
+
+        <!-- Répéter pour chaque type de café -->
+    </div>
+
+    <div id="panier">
+        <h2>Votre Panier</h2>
+        <ul id="articlesPanier">
+            <!-- Les articles ajoutés apparaîtront ici -->
+        </ul>
+        <button id="validerPanier">Valider le panier</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
